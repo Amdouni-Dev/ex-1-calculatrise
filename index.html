@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>Hi !</h1>  
+  <script>
+    var num1 = parseInt (prompt("write the first number"))
+    var num2 = parseInt (prompt("write the second number"))
+    var operation = prompt("enter your signe (*,+,-,/)")
+    switch (operation){
+        case "-":{
+            alert (`your result is:${num1} ${operation} ${num2} : ${num1-num2}`);
+            break
+        }
+        case "+":{
+            alert (`your result is:${num1} ${operation} ${num2} : ${num1+num2}`);
+            break
+        }
+        case "*":{
+            alert (`your result is:${num1} ${operation} ${num2} : ${num1*num2}`);
+            break
+        }
+        case "/":{
+            if (num2 == 0){
+                alert("you can't divise on 0")
+            }
+            else{
+                alert (`your result is:${num1} ${operation} ${num2} : ${num1/num2}`);
+            }
+            break
+        }
+        
+        
+    }
+    
+  </script>
+</body>
+</html>
